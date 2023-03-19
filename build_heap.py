@@ -41,11 +41,13 @@ def main():
         print("Error")
         return
     
-    assert len(data) == n
+    assert data is not None and len(data) == n
 
    
     swaps = build_heap(data)
-
+    
+    assert len(swaps) <= n*4
+    
     print(len(swaps))
     for i, j in swaps:
         print(i, j)
