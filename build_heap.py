@@ -29,16 +29,18 @@ def main():
     text= input("Enter 'I' or 'F' : ")
     if "I" in text:
         n = int(input())
-        data = list(map(int, input().split()))
+        data=list(map(int, input().split()))
     
     elif "F" in text:
         file_name = input()
-        with open("tests/" + file_name,'r') as fails:
-            n=int(fails.readline())
-            data = list(map(int, fails.readline().split()))
+        if "a" not in file_name
+            with open("tests/" + file_name,'r',encoding='utf-8') as fails:
+                n=int(fails.readline())
+                data = list(map(int, fails.readline().split()))
     else:
         print("Error")
         return
+    
     assert len(data) == n
 
    
