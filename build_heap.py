@@ -6,8 +6,9 @@ def build_heap(data):
     n=len(data)
     
     for i in range((size//2)-1,-1,-1):
+     
         while True:
-            x=i;
+            x=i
             left=2*i+1
             right=2*i+2
             
