@@ -33,7 +33,7 @@ def main():
     
     elif "F" in text:
         file_name = input()
-        if "a" not in file_name
+        if "a" not in file_name:
             with open("tests/" + file_name,'r',encoding='utf-8') as fails:
                 n=int(fails.readline())
                 data = list(map(int, fails.readline().split()))
